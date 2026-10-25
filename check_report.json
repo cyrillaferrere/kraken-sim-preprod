@@ -3,13 +3,13 @@
   "mode": "INIT_CHECK_HOLD_ONLY",
   "engine_version": "V1.6.1",
   "strategy_version": "V1.2",
-  "generated_at": "2026-10-25T22:36:13.381621+00:00",
+  "generated_at": "2026-10-25T22:40:24.928209+00:00",
   "state_initialized_now": false,
   "data": {
     "origin": "KRAKEN_PUBLIC_API",
-    "observed_at": "2026-10-25T22:36:13.142900+00:00",
-    "pairs_quoted": 25,
-    "pairs_valid": 25,
+    "observed_at": "2026-10-25T22:40:24.566798+00:00",
+    "pairs_quoted": 26,
+    "pairs_valid": 26,
     "btc_daily_bars": 720,
     "usdc_usd": null
   },
@@ -39,7 +39,7 @@
       "entries": []
     }
   },
-  "synthesis_sha256": "9f14a2d2fb96bc0a0dc62ec61641cf8fefc570e20858856ed76fa1524bd1a847",
+  "synthesis_sha256": "ffca8edcc8e040a0e556c90c25d10b1c1edf86fd28fc3a99f755323f2509eaa0",
   "guardrails": {
     "risk": {
       "peak_drawdown_kill": 0.25,
@@ -57,7 +57,7 @@
   },
   "decisions": [
     {
-      "decision_id": "init-check-hold:9f14a2d2fb96bc0a",
+      "decision_id": "init-check-hold:ffca8edcc8e040a0",
       "accepted": true,
       "reason": "HOLD_LOGGED_NO_ORDER"
     }
@@ -106,6 +106,7 @@
       "SOL",
       "TON",
       "TRUMP",
+      "VET",
       "XDC",
       "XRP",
       "XTZ"
@@ -133,6 +134,7 @@
       "SOL/USDC",
       "TON/USDC",
       "TRUMP/USDC",
+      "VET/USDC",
       "XDC/USDC",
       "XRP/USDC",
       "XTZ/USDC"
@@ -254,6 +256,11 @@
         "closed_bars": 678,
         "status": "ok"
       },
+      "VET": {
+        "pair": "VET/USDC",
+        "closed_bars": 271,
+        "status": "ok"
+      },
       "MANA": {
         "pair": "MANA/USDC",
         "closed_bars": 678,
@@ -276,7 +283,6 @@
       "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDR": "PAIR_NOT_ONLINE",
-      "VET": "SPREAD_ABOVE_0_3_PCT",
       "VIRTUAL": "SPREAD_ABOVE_0_3_PCT"
     },
     "btc_regime_source": "BTC/USDC",
