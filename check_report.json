@@ -1,27 +1,31 @@
 {
   "schema_version": 1,
   "mode": "INIT_CHECK_HOLD_ONLY",
-  "engine_version": "V1.5",
+  "engine_version": "V1.6",
   "strategy_version": "V1.2",
-  "generated_at": "2026-10-25T22:12:21.067634+00:00",
-  "state_initialized_now": false,
+  "generated_at": "2026-10-25T22:26:17.011085+00:00",
+  "state_initialized_now": true,
   "data": {
     "origin": "KRAKEN_PUBLIC_API",
-    "observed_at": "2026-10-25T22:12:20.610981+00:00",
+    "observed_at": "2026-10-25T22:26:16.578649+00:00",
     "pairs_quoted": 40,
-    "pairs_valid": 39,
+    "pairs_valid": 38,
     "btc_daily_bars": 720,
     "usdc_usd": {
       "source": "trusted-public-kraken",
       "bid": "0.99970000",
       "ask": "0.99980000",
-      "as_of": "2026-10-25T22:12:11.603791+00:00"
+      "as_of": "2026-10-25T22:26:06.882097+00:00"
     }
   },
   "excluded_pairs": {
+    "CAP": {
+      "reason": "SPREAD_TOO_WIDE",
+      "spread": "0.00317"
+    },
     "APR": {
       "reason": "SPREAD_TOO_WIDE",
-      "spread": "0.00511"
+      "spread": "0.00437"
     }
   },
   "tick": {
@@ -59,7 +63,7 @@
       "entries": []
     }
   },
-  "synthesis_sha256": "994ac3ed7f6b79b247822d38b12c5f9a627c2104dd6b605d9a5553f98d276f4c",
+  "synthesis_sha256": "9a18b209e310bdbfc57576c342d0c4fe00714c01afa2b04b76189060ac193994",
   "guardrails": {
     "risk": {
       "peak_drawdown_kill": 0.25,
@@ -73,11 +77,11 @@
     "min_valid_pairs": 10,
     "risk_lock": false,
     "kill_count": 0,
-    "engine_peak_usd": "6605.10"
+    "engine_peak_usdc": "6605.10"
   },
   "decisions": [
     {
-      "decision_id": "init-check-hold:994ac3ed7f6b79b2",
+      "decision_id": "init-check-hold:9a18b209e310bdbf",
       "accepted": true,
       "reason": "HOLD_LOGGED_NO_ORDER"
     }
@@ -85,12 +89,27 @@
   "orders": 0,
   "fills": 0,
   "trades": 0,
-  "equity_usd": "6605.10",
-  "cash_usd": "6605.10",
+  "quote_currency": "USDC",
+  "valuation_method": "Quotes in USDC: Kraken XXX/USDC ticker when listed online with spread <= 0.3 %; otherwise XXX/USD divided by Kraken USDC/USD (bid/ask_usdcusd, ask/bid_usdcusd). Daily bars (signals, ratios) stay on XXX/USD.",
+  "equity_usdc": "6605.10",
+  "cash_usdc": "6605.10",
+  "fees_paid_usdc": "0",
+  "realized_pnl_usdc": "0",
   "positions": {},
-  "initial_capital_usd": "6605.10",
+  "initial_capital_usdc": "6605.10",
   "benchmark": {
-    "usdc_hold_usd": "6604.439357871574314862972595"
+    "usdc_hold_usdc": "6605.10",
+    "usdc_hold_return_pct": 0
+  },
+  "migration": {
+    "at": "2026-10-25T22:26:06.362751+00:00",
+    "from": "USD",
+    "to": "USDC",
+    "previous_cash": "6605.10",
+    "orders": 0,
+    "fills": 0,
+    "positions": 0,
+    "action": "REINITIALISED_USDC_C0_6605.10"
   },
   "live_orders": 0,
   "api_keys_used": false

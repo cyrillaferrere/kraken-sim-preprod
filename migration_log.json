@@ -1,0 +1,12 @@
+[
+  {
+    "at": "2026-10-25T22:26:06.362751+00:00",
+    "from": "USD",
+    "to": "USDC",
+    "previous_cash": "6605.10",
+    "orders": 0,
+    "fills": 0,
+    "positions": 0,
+    "action": "REINITIALISED_USDC_C0_6605.10"
+  }
+]
