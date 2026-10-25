@@ -1,0 +1,147 @@
+{
+  "equity": 6605.1,
+  "cash": 6605.1,
+  "C0": 6605.1,
+  "positions": [],
+  "orders": [],
+  "pending_orders": [],
+  "pending_count": 0,
+  "decisions": [
+    {
+      "action": "HOLD",
+      "asset": "Portefeuille",
+      "created_at": "2026-10-25T22:12:21.067634+00:00",
+      "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:994ac3ed7f6b79b2 · acceptée=True",
+      "decision_id": "init-check-hold:994ac3ed7f6b79b2",
+      "accepted": true
+    }
+  ],
+  "as_of": "2026-10-25T22:12:21.067634+00:00",
+  "last_cycle_iso": "2026-10-25T22:12:21.067634+00:00",
+  "usdc_hold_usd": 6604.439357871574,
+  "btc_hold_usd": null,
+  "cur_dd_pct": 0.0,
+  "fees_paid_usd": null,
+  "risk": {
+    "risk_lock": false,
+    "paused": null,
+    "kill_count": 0
+  },
+  "candidate_signals": {
+    "A": "13 évaluées · 0 entrée",
+    "B": "13 évaluées · 12 entrées : BTC, ETH, XRP, SOL, ZEC, NEAR, SUI, QNT, HYPE, TAO, AVAX, PUMP",
+    "C": "2 évaluées · 0 entrée",
+    "D": "13 évaluées · 0 entrée"
+  },
+  "grok": {
+    "status": "Décision HOLD (init-check moteur, pas une IT Grok)",
+    "last_action": "HOLD — 0 ordre, 0 exécution, 0 trade"
+  },
+  "init_check": {
+    "mode": "INIT_CHECK_HOLD_ONLY",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "asset": "Portefeuille",
+        "created_at": "2026-10-25T22:12:21.067634+00:00",
+        "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:994ac3ed7f6b79b2 · acceptée=True",
+        "decision_id": "init-check-hold:994ac3ed7f6b79b2",
+        "accepted": true
+      }
+    ],
+    "orders": 0,
+    "fills": 0,
+    "trades": 0,
+    "api_keys_used": false,
+    "pairs_quoted": 40,
+    "pairs_valid": 39,
+    "usdc_usd": {
+      "source": "trusted-public-kraken",
+      "bid": "0.99970000",
+      "ask": "0.99980000",
+      "as_of": "2026-10-25T22:12:11.603791+00:00"
+    },
+    "excluded_pairs": {
+      "APR": {
+        "reason": "SPREAD_TOO_WIDE",
+        "spread": "0.00511"
+      }
+    },
+    "guardrails": {
+      "risk": {
+        "peak_drawdown_kill": 0.25,
+        "cooldown_days": 14,
+        "correlation_window_days": 60,
+        "correlation_max": 0.85,
+        "correlated_weight_max": 0.4,
+        "max_exposure": 0.9
+      },
+      "max_spread": "0.003",
+      "min_valid_pairs": 10,
+      "risk_lock": false,
+      "kill_count": 0,
+      "engine_peak_usd": "6605.10"
+    },
+    "tick": {
+      "status": "DRY_RUN",
+      "reason": null
+    },
+    "synthesis_sha256": "994ac3ed7f6b79b247822d38b12c5f9a627c2104dd6b605d9a5553f98d276f4c",
+    "engine_version_report": "V1.5"
+  },
+  "allocation": null,
+  "atr_mult": null,
+  "backtest": null,
+  "basket_return_pct": null,
+  "btc_regime": null,
+  "btc_regime_state": null,
+  "btc_return_pct": null,
+  "btc_series": null,
+  "core": null,
+  "curve": null,
+  "dd_series": null,
+  "exposure_pct": null,
+  "fees": null,
+  "fees_tier": null,
+  "ind_btc_pair": null,
+  "ind_live": null,
+  "indicators": null,
+  "indicators_src": null,
+  "invested_pct": null,
+  "journal": null,
+  "keep_rank": null,
+  "killed": null,
+  "lessons": null,
+  "max_dd_pct": null,
+  "min_hold_h": null,
+  "n_cycles": null,
+  "n_trades": null,
+  "net_return_pct": null,
+  "pnl_by_asset": null,
+  "pnl_gross": null,
+  "pnl_net": null,
+  "snapshot": null,
+  "start_iso": null,
+  "start_paris": null,
+  "strategy_version": "V1.2",
+  "total": 6605.1,
+  "trade_stats": null,
+  "universe": null,
+  "version": null,
+  "version_engine": "V1.5",
+  "vs_btc_pct": null,
+  "walkforward": null,
+  "win_rate_pct": null,
+  "schema_version": 1,
+  "strategy_id": "kraken-sim-v1.2",
+  "environment": "preprod",
+  "source": "Kraken Sim V1.2 independent PAPER ledger",
+  "source_detail": {
+    "strategy": "V1.2",
+    "repo": "kraken-sim-preprod",
+    "branch": "state-v12",
+    "real_cycle": true
+  },
+  "generated_utc": "2026-10-25T22:12:21.200998+00:00",
+  "generated_paris": "2026-10-25T23:12:21.200998+01:00"
+}
