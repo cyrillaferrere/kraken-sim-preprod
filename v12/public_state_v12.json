@@ -3,6 +3,15 @@
   "cash": 6605.1,
   "C0": 6605.1,
   "positions": [],
+  "portfolio": [
+    {
+      "asset": "USDC",
+      "qty": 6605.1,
+      "value_usdc": 6605.1,
+      "role": "devise de compte / refuge",
+      "weight_pct": 100.0
+    }
+  ],
   "orders": [],
   "pending_orders": [],
   "pending_count": 0,
@@ -10,14 +19,14 @@
     {
       "action": "HOLD",
       "asset": "Portefeuille",
-      "created_at": "2026-10-25T22:36:13.381621+00:00",
-      "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:9f14a2d2fb96bc0a · acceptée=True",
-      "decision_id": "init-check-hold:9f14a2d2fb96bc0a",
+      "created_at": "2026-10-25T22:40:24.928209+00:00",
+      "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:ffca8edcc8e040a0 · acceptée=True",
+      "decision_id": "init-check-hold:ffca8edcc8e040a0",
       "accepted": true
     }
   ],
-  "as_of": "2026-10-25T22:36:13.381621+00:00",
-  "last_cycle_iso": "2026-10-25T22:36:13.381621+00:00",
+  "as_of": "2026-10-25T22:40:24.928209+00:00",
+  "last_cycle_iso": "2026-10-25T22:40:24.928209+00:00",
   "usdc_hold_usdc": 6605.1,
   "usdc_hold_return_pct": 0,
   "btc_hold_usdc": null,
@@ -46,9 +55,9 @@
       {
         "action": "HOLD",
         "asset": "Portefeuille",
-        "created_at": "2026-10-25T22:36:13.381621+00:00",
-        "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:9f14a2d2fb96bc0a · acceptée=True",
-        "decision_id": "init-check-hold:9f14a2d2fb96bc0a",
+        "created_at": "2026-10-25T22:40:24.928209+00:00",
+        "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:ffca8edcc8e040a0 · acceptée=True",
+        "decision_id": "init-check-hold:ffca8edcc8e040a0",
         "accepted": true
       }
     ],
@@ -56,8 +65,8 @@
     "fills": 0,
     "trades": 0,
     "api_keys_used": false,
-    "pairs_quoted": 25,
-    "pairs_valid": 25,
+    "pairs_quoted": 26,
+    "pairs_valid": 26,
     "usdc_usd": null,
     "excluded_pairs": {},
     "guardrails": {
@@ -79,7 +88,7 @@
       "status": "DRY_RUN",
       "reason": null
     },
-    "synthesis_sha256": "9f14a2d2fb96bc0a0dc62ec61641cf8fefc570e20858856ed76fa1524bd1a847",
+    "synthesis_sha256": "ffca8edcc8e040a0e556c90c25d10b1c1edf86fd28fc3a99f755323f2509eaa0",
     "engine_version_report": "V1.6.1",
     "migration": null,
     "compliance": {
@@ -110,6 +119,7 @@
         "SOL",
         "TON",
         "TRUMP",
+        "VET",
         "XDC",
         "XRP",
         "XTZ"
@@ -137,6 +147,7 @@
         "SOL/USDC",
         "TON/USDC",
         "TRUMP/USDC",
+        "VET/USDC",
         "XDC/USDC",
         "XRP/USDC",
         "XTZ/USDC"
@@ -258,6 +269,11 @@
           "closed_bars": 678,
           "status": "ok"
         },
+        "VET": {
+          "pair": "VET/USDC",
+          "closed_bars": 271,
+          "status": "ok"
+        },
         "MANA": {
           "pair": "MANA/USDC",
           "closed_bars": 678,
@@ -280,7 +296,6 @@
         "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
         "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
         "USDR": "PAIR_NOT_ONLINE",
-        "VET": "SPREAD_ABOVE_0_3_PCT",
         "VIRTUAL": "SPREAD_ABOVE_0_3_PCT"
       },
       "btc_regime_source": "BTC/USDC",
@@ -318,6 +333,7 @@
       "SOL",
       "TON",
       "TRUMP",
+      "VET",
       "XDC",
       "XRP",
       "XTZ"
@@ -345,6 +361,7 @@
       "SOL/USDC",
       "TON/USDC",
       "TRUMP/USDC",
+      "VET/USDC",
       "XDC/USDC",
       "XRP/USDC",
       "XTZ/USDC"
@@ -466,6 +483,11 @@
         "closed_bars": 678,
         "status": "ok"
       },
+      "VET": {
+        "pair": "VET/USDC",
+        "closed_bars": 271,
+        "status": "ok"
+      },
       "MANA": {
         "pair": "MANA/USDC",
         "closed_bars": 678,
@@ -488,7 +510,6 @@
       "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDR": "PAIR_NOT_ONLINE",
-      "VET": "SPREAD_ABOVE_0_3_PCT",
       "VIRTUAL": "SPREAD_ABOVE_0_3_PCT"
     },
     "btc_regime_source": "BTC/USDC",
@@ -550,6 +571,6 @@
     "branch": "state-v12",
     "real_cycle": true
   },
-  "generated_utc": "2026-10-25T22:36:13.509992+00:00",
-  "generated_paris": "2026-10-25T23:36:13.509992+01:00"
+  "generated_utc": "2026-10-25T22:40:25.032707+00:00",
+  "generated_paris": "2026-10-25T23:40:25.032707+01:00"
 }
