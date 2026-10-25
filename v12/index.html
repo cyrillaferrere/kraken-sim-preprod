@@ -135,6 +135,32 @@ h1,h2,h3,p{margin:0}h1{font-size:29px;letter-spacing:-.9px;font-weight:720;line-
     <article class="card"><div class="card-head"><div><h2>Garde-fous</h2><p>Paramètres de risque du moteur V1.2</p></div></div><div id="icGuards"><div class="empty">—</div></div></article>
    </div>
   </section>
+  <section id="liquidityMonitor" class="section" aria-label="Contrôle de liquidité V1.6.2">
+   <div class="section-header"><h2>Liquidité XXX/USDC</h2><p>Contrôles PAPER au moment de chaque ordre · métriques moteur uniquement</p></div>
+   <div class="grid4">
+    <article class="card kpi"><div class="eyebrow">Seuil de volume médian</div><div class="value" id="lqThreshold">—</div><div class="foot">XXX/USDC · 30 jours · valeur versionnée</div></article>
+    <article class="card kpi"><div class="eyebrow">Paires passant le filtre</div><div class="value" id="lqEligible">—</div><div class="foot" id="lqEligibilityNote">Aucun comptage publié</div></article>
+    <article class="card kpi"><div class="eyebrow">Ordres refusés (liquidité)</div><div class="value" id="lqRejected">—</div><div class="foot" id="lqRejectedPct">Taux non publié</div></article>
+    <article class="card kpi"><div class="eyebrow">Profondeur USDC vérifiée</div><div class="value" id="lqDepth">—</div><div class="foot" id="lqDepthNote">Pas d'affirmation sans donnée moteur</div></article>
+   </div>
+   <div class="duocol" style="margin-top:14px">
+    <article class="card"><div class="card-head"><div><h2>Qualité d'exécution</h2><p>Mesures publiques observées, distinctes des estimations</p></div></div>
+      <div class="statline"><span>Spread maximal autorisé</span><strong>0,30 %</strong></div>
+      <div class="statline"><span>Spread médian mesuré</span><strong id="lqSpread">—</strong></div>
+      <div class="statline"><span>Slippage estimé pour l'ordre</span><strong id="lqSlippage">—</strong></div>
+      <div class="statline"><span>Nombre de carnets contrôlés</span><strong id="lqBookChecks">—</strong></div>
+      <div class="no-borrow">Le dashboard ne déduit ni la profondeur ni le slippage du seul volume. Un ordre PAPER refusé reste un refus.</div>
+    </article>
+    <article class="card"><div class="card-head"><div><h2>Motifs des refus</h2><p>Suivi des événements fournis par le moteur</p></div></div>
+      <div id="lqRejectionReasons" class="barlist"><div class="empty">Pas de statistiques de refus publiées</div></div>
+      <details class="details"><summary>Provenance et version de la règle</summary>
+        <div class="statline"><span>Version du moteur</span><strong id="lqEngine">—</strong></div>
+        <div class="statline"><span>Date du contrôle</span><strong id="lqAsOf">—</strong></div>
+        <div class="statline"><span>Retour automatique à 5 M</span><strong id="lqRollback">Non documenté</strong></div>
+      </details>
+    </article>
+   </div>
+  </section>
   <section id="analyse" class="section">
    <div class="section-header"><h2>Analyse & apprentissage</h2><p>Constats mesurés par le moteur, distincts des propositions de Grok</p></div>
    <div class="grid3">
@@ -148,12 +174,12 @@ h1,h2,h3,p{margin:0}h1{font-size:29px;letter-spacing:-.9px;font-weight:720;line-
    </div>
   </section>
  </main>
- <footer class="footer"><span>Kraken Sim PreProd · UX V1.2.0 · Simulation spot fictive · Aucun ordre réel</span><span>Indicateurs selon les cycles disponibles · Horaires Europe/Paris</span></footer>
+ <footer class="footer"><span>Kraken Sim PreProd · UX V1.2.3 · Simulation spot fictive · Aucun ordre réel</span><span>Indicateurs selon les cycles disponibles · Horaires Europe/Paris</span></footer>
 </div></div>
 <script>
 const D = {"equity": 6605.1, "cash": 6605.1, "C0": 6605.1, "positions": [], "portfolio": [{"asset": "USDC", "qty": 6605.1, "value_usdc": 6605.1, "role": "devise de compte / refuge", "weight_pct": 100.0}], "orders": [], "pending_orders": [], "pending_count": 0, "decisions": [{"action": "HOLD", "asset": "Portefeuille", "created_at": "2026-10-25T22:40:24.928209+00:00", "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:ffca8edcc8e040a0 · acceptée=True", "decision_id": "init-check-hold:ffca8edcc8e040a0", "accepted": true}], "as_of": "2026-10-25T22:40:24.928209+00:00", "last_cycle_iso": "2026-10-25T22:40:24.928209+00:00", "usdc_hold_usdc": 6605.1, "usdc_hold_return_pct": 0, "btc_hold_usdc": null, "quote_currency": "USDC", "valuation_method": "UE/MiCA (Moteur V1.6.1): Kraken XXX/USDC only (AssetPairs country_code=FR, status online, spread <= 0.3 %), no USD conversion. Daily bars (signals, ratios) from XXX/USDC OHLC; pairs with fewer than 220 closed daily bars are insufficient_history (bars null, never imputed).", "cur_dd_pct": 0.0, "fees_paid_usdc": 0.0, "risk": {"risk_lock": false, "paused": null, "kill_count": 0}, "candidate_signals": {"A": "2 évaluées · 0 entrée", "B": "2 évaluées · 2 entrées : BTC, ETH", "C": "2 évaluées · 0 entrée", "D": "2 évaluées · 0 entrée"}, "grok": {"status": "Décision HOLD (init-check moteur, pas une IT Grok)", "last_action": "HOLD — 0 ordre, 0 exécution, 0 trade"}, "init_check": {"mode": "INIT_CHECK_HOLD_ONLY", "decisions": [{"action": "HOLD", "asset": "Portefeuille", "created_at": "2026-10-25T22:40:24.928209+00:00", "reason": "HOLD_LOGGED_NO_ORDER · init-check-hold:ffca8edcc8e040a0 · acceptée=True", "decision_id": "init-check-hold:ffca8edcc8e040a0", "accepted": true}], "orders": 0, "fills": 0, "trades": 0, "api_keys_used": false, "pairs_quoted": 26, "pairs_valid": 26, "usdc_usd": null, "excluded_pairs": {}, "guardrails": {"risk": {"peak_drawdown_kill": 0.25, "cooldown_days": 14, "correlation_window_days": 60, "correlation_max": 0.85, "correlated_weight_max": 0.4, "max_exposure": 0.9}, "max_spread": "0.003", "min_valid_pairs": 10, "risk_lock": false, "kill_count": 0, "engine_peak_usdc": "6605.10"}, "tick": {"status": "DRY_RUN", "reason": null}, "synthesis_sha256": "ffca8edcc8e040a0e556c90c25d10b1c1edf86fd28fc3a99f755323f2509eaa0", "engine_version_report": "V1.6.1", "migration": null, "compliance": {"regime": "UE/MiCA", "country_code": "FR", "quote": "USDC", "spot_long_only": true, "eligible": ["ADA", "ALGO", "ATOM", "AVAX", "BCH", "BNB", "BTC", "CC", "DOGE", "DOT", "ETH", "FARTCOIN", "LINK", "LTC", "MANA", "MELANIA", "PEAQ", "PENGU", "SHIB", "SOL", "TON", "TRUMP", "VET", "XDC", "XRP", "XTZ"], "eligible_pairs": ["ADA/USDC", "ALGO/USDC", "ATOM/USDC", "AVAX/USDC", "BCH/USDC", "BNB/USDC", "BTC/USDC", "CC/USDC", "DOGE/USDC", "DOT/USDC", "ETH/USDC", "FARTCOIN/USDC", "LINK/USDC", "LTC/USDC", "MANA/USDC", "MELANIA/USDC", "PEAQ/USDC", "PENGU/USDC", "SHIB/USDC", "SOL/USDC", "TON/USDC", "TRUMP/USDC", "VET/USDC", "XDC/USDC", "XRP/USDC", "XTZ/USDC"], "insufficient_history": [], "history": {"BTC": {"pair": "BTC/USDC", "closed_bars": 720, "status": "ok"}, "ETH": {"pair": "ETH/USDC", "closed_bars": 720, "status": "ok"}, "SOL": {"pair": "SOL/USDC", "closed_bars": 678, "status": "ok"}, "XRP": {"pair": "XRP/USDC", "closed_bars": 678, "status": "ok"}, "XDC": {"pair": "XDC/USDC", "closed_bars": 418, "status": "ok"}, "ADA": {"pair": "ADA/USDC", "closed_bars": 678, "status": "ok"}, "LTC": {"pair": "LTC/USDC", "closed_bars": 678, "status": "ok"}, "TON": {"pair": "TON/USDC", "closed_bars": 678, "status": "ok"}, "LINK": {"pair": "LINK/USDC", "closed_bars": 678, "status": "ok"}, "FARTCOIN": {"pair": "FARTCOIN/USDC", "closed_bars": 640, "status": "ok"}, "DOT": {"pair": "DOT/USDC", "closed_bars": 678, "status": "ok"}, "BNB": {"pair": "BNB/USDC", "closed_bars": 551, "status": "ok"}, "ALGO": {"pair": "ALGO/USDC", "closed_bars": 678, "status": "ok"}, "TRUMP": {"pair": "TRUMP/USDC", "closed_bars": 644, "status": "ok"}, "DOGE": {"pair": "DOGE/USDC", "closed_bars": 678, "status": "ok"}, "AVAX": {"pair": "AVAX/USDC", "closed_bars": 678, "status": "ok"}, "PENGU": {"pair": "PENGU/USDC", "closed_bars": 634, "status": "ok"}, "BCH": {"pair": "BCH/USDC", "closed_bars": 678, "status": "ok"}, "SHIB": {"pair": "SHIB/USDC", "closed_bars": 678, "status": "ok"}, "MELANIA": {"pair": "MELANIA/USDC", "closed_bars": 643, "status": "ok"}, "CC": {"pair": "CC/USDC", "closed_bars": 349, "status": "ok"}, "PEAQ": {"pair": "PEAQ/USDC", "closed_bars": 425, "status": "ok"}, "ATOM": {"pair": "ATOM/USDC", "closed_bars": 678, "status": "ok"}, "VET": {"pair": "VET/USDC", "closed_bars": 271, "status": "ok"}, "MANA": {"pair": "MANA/USDC", "closed_bars": 678, "status": "ok"}, "XTZ": {"pair": "XTZ/USDC", "closed_bars": 678, "status": "ok"}}, "rejected": {"APE": "SPREAD_ABOVE_0_3_PCT", "BERA": "SPREAD_ABOVE_0_3_PCT", "CRO": "SPREAD_ABOVE_0_3_PCT", "EURC": "STABLECOIN_OR_FIAT_EXCLUDED", "EUROP": "STABLECOIN_OR_FIAT_EXCLUDED", "EURR": "PAIR_NOT_ONLINE", "S": "SPREAD_ABOVE_0_3_PCT", "USDG": "STABLECOIN_OR_FIAT_EXCLUDED", "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED", "USDR": "PAIR_NOT_ONLINE", "VIRTUAL": "SPREAD_ABOVE_0_3_PCT"}, "btc_regime_source": "BTC/USDC", "btc_regime_history": {"closed_bars": 720, "sufficient": true}}}, "compliance": {"regime": "UE/MiCA", "country_code": "FR", "quote": "USDC", "spot_long_only": true, "eligible": ["ADA", "ALGO", "ATOM", "AVAX", "BCH", "BNB", "BTC", "CC", "DOGE", "DOT", "ETH", "FARTCOIN", "LINK", "LTC", "MANA", "MELANIA", "PEAQ", "PENGU", "SHIB", "SOL", "TON", "TRUMP", "VET", "XDC", "XRP", "XTZ"], "eligible_pairs": ["ADA/USDC", "ALGO/USDC", "ATOM/USDC", "AVAX/USDC", "BCH/USDC", "BNB/USDC", "BTC/USDC", "CC/USDC", "DOGE/USDC", "DOT/USDC", "ETH/USDC", "FARTCOIN/USDC", "LINK/USDC", "LTC/USDC", "MANA/USDC", "MELANIA/USDC", "PEAQ/USDC", "PENGU/USDC", "SHIB/USDC", "SOL/USDC", "TON/USDC", "TRUMP/USDC", "VET/USDC", "XDC/USDC", "XRP/USDC", "XTZ/USDC"], "insufficient_history": [], "history": {"BTC": {"pair": "BTC/USDC", "closed_bars": 720, "status": "ok"}, "ETH": {"pair": "ETH/USDC", "closed_bars": 720, "status": "ok"}, "SOL": {"pair": "SOL/USDC", "closed_bars": 678, "status": "ok"}, "XRP": {"pair": "XRP/USDC", "closed_bars": 678, "status": "ok"}, "XDC": {"pair": "XDC/USDC", "closed_bars": 418, "status": "ok"}, "ADA": {"pair": "ADA/USDC", "closed_bars": 678, "status": "ok"}, "LTC": {"pair": "LTC/USDC", "closed_bars": 678, "status": "ok"}, "TON": {"pair": "TON/USDC", "closed_bars": 678, "status": "ok"}, "LINK": {"pair": "LINK/USDC", "closed_bars": 678, "status": "ok"}, "FARTCOIN": {"pair": "FARTCOIN/USDC", "closed_bars": 640, "status": "ok"}, "DOT": {"pair": "DOT/USDC", "closed_bars": 678, "status": "ok"}, "BNB": {"pair": "BNB/USDC", "closed_bars": 551, "status": "ok"}, "ALGO": {"pair": "ALGO/USDC", "closed_bars": 678, "status": "ok"}, "TRUMP": {"pair": "TRUMP/USDC", "closed_bars": 644, "status": "ok"}, "DOGE": {"pair": "DOGE/USDC", "closed_bars": 678, "status": "ok"}, "AVAX": {"pair": "AVAX/USDC", "closed_bars": 678, "status": "ok"}, "PENGU": {"pair": "PENGU/USDC", "closed_bars": 634, "status": "ok"}, "BCH": {"pair": "BCH/USDC", "closed_bars": 678, "status": "ok"}, "SHIB": {"pair": "SHIB/USDC", "closed_bars": 678, "status": "ok"}, "MELANIA": {"pair": "MELANIA/USDC", "closed_bars": 643, "status": "ok"}, "CC": {"pair": "CC/USDC", "closed_bars": 349, "status": "ok"}, "PEAQ": {"pair": "PEAQ/USDC", "closed_bars": 425, "status": "ok"}, "ATOM": {"pair": "ATOM/USDC", "closed_bars": 678, "status": "ok"}, "VET": {"pair": "VET/USDC", "closed_bars": 271, "status": "ok"}, "MANA": {"pair": "MANA/USDC", "closed_bars": 678, "status": "ok"}, "XTZ": {"pair": "XTZ/USDC", "closed_bars": 678, "status": "ok"}}, "rejected": {"APE": "SPREAD_ABOVE_0_3_PCT", "BERA": "SPREAD_ABOVE_0_3_PCT", "CRO": "SPREAD_ABOVE_0_3_PCT", "EURC": "STABLECOIN_OR_FIAT_EXCLUDED", "EUROP": "STABLECOIN_OR_FIAT_EXCLUDED", "EURR": "PAIR_NOT_ONLINE", "S": "SPREAD_ABOVE_0_3_PCT", "USDG": "STABLECOIN_OR_FIAT_EXCLUDED", "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED", "USDR": "PAIR_NOT_ONLINE", "VIRTUAL": "SPREAD_ABOVE_0_3_PCT"}, "btc_regime_source": "BTC/USDC", "btc_regime_history": {"closed_bars": 720, "sufficient": true}}, "allocation": null, "atr_mult": null, "backtest": null, "basket_return_pct": null, "btc_regime": null, "btc_regime_state": null, "btc_return_pct": null, "btc_series": null, "core": null, "curve": null, "dd_series": null, "exposure_pct": null, "fees": null, "fees_tier": null, "ind_btc_pair": null, "ind_live": null, "indicators": null, "indicators_src": null, "invested_pct": null, "journal": null, "keep_rank": null, "killed": null, "lessons": null, "max_dd_pct": null, "min_hold_h": null, "n_cycles": null, "n_trades": null, "net_return_pct": null, "pnl_by_asset": null, "pnl_gross": null, "pnl_net": null, "snapshot": null, "start_iso": null, "start_paris": null, "strategy_version": "V1.2", "total": 6605.1, "trade_stats": null, "universe": null, "version": null, "version_engine": "V1.6.1", "vs_btc_pct": null, "walkforward": null, "win_rate_pct": null, "schema_version": 1, "strategy_id": "kraken-sim-v1.2", "environment": "preprod", "source": "Kraken Sim V1.2 independent PAPER ledger", "source_detail": {"strategy": "V1.2", "repo": "kraken-sim-preprod", "branch": "state-v12", "real_cycle": true}, "generated_utc": "2026-10-25T22:40:25.032707+00:00", "generated_paris": "2026-10-25T23:40:25.032707+01:00"};
 const STATE_URL = "public_state_v12.json";
-const VERSION_UX = "V1.2.2";
+const VERSION_UX = "V1.2.3";
 const qs = id => document.getElementById(id);
 const nf = new Intl.NumberFormat("fr-FR",{maximumFractionDigits:2,minimumFractionDigits:2});
 const nfQty = new Intl.NumberFormat("fr-FR",{maximumFractionDigits:8});
@@ -275,13 +301,32 @@ function initCheck(d){
  const g=obj(ic.guardrails),r=obj(g.risk);const pc=v=>num(v)===null?"—":percent(num(v)*100);
  qs("icGuards").innerHTML=ic.guardrails==null?'<div class="empty">—</div>':[st("Coupe-circuit drawdown","−"+pc(r.peak_drawdown_kill)),st("Exposition max",pc(r.max_exposure)),st("Spread max",pc(g.max_spread)),st("Paires valides min",n(g.min_valid_pairs)),st("Corrélation max",val(r.correlation_max,2)),st("Verrou risque",g.risk_lock===false?"Inactif":g.risk_lock===true?"ACTIF":"—"),st("Pic moteur",usd(g.engine_peak_usd))].join("");
 }
+function renderLiquidity(d){
+ const m=obj(d.liquidity_monitor);
+ text("lqEngine",d.version_engine??"—");
+ text("lqAsOf",stamp(m.as_of??null));
+ text("lqThreshold",num(m.min_median_daily_volume_usdc)===null?"—":usd(m.min_median_daily_volume_usdc));
+ text("lqEligible",num(m.eligible_pairs_count)===null?"—":val(m.eligible_pairs_count,0));
+ text("lqEligibilityNote",m.eligible_pairs_count==null?"Donnée moteur absente":"Après filtrage volume USDC");
+ text("lqRejected",num(m.rejected_liquidity_orders)===null?"—":val(m.rejected_liquidity_orders,0));
+ text("lqRejectedPct",num(m.rejected_liquidity_pct)===null?"Taux non publié":"Taux : "+percent(m.rejected_liquidity_pct));
+ text("lqDepth",num(m.orderbook_checks)===null?"—":val(m.orderbook_checks,0)+" contrôle(s)");
+ text("lqDepthNote",m.orderbook_checks==null?"Contrôle non attesté":"Vérifications moteur du carnet USDC");
+ text("lqSpread",percent(m.median_spread_pct));
+ text("lqSlippage",percent(m.estimated_slippage_pct));
+ text("lqBookChecks",num(m.orderbook_checks)===null?"—":val(m.orderbook_checks,0));
+ text("lqRollback",m.rollback_policy??"Non documenté");
+ const reasons=obj(m.rejection_reasons);
+ const ent=Object.entries(reasons).filter(([k,v])=>num(v)!==null);
+ qs("lqRejectionReasons").innerHTML=ent.length?ent.map(([k,v])=>'<div class="statline"><span>'+htmlEscape(k)+'</span><strong>'+htmlEscape(val(v,0))+'</strong></div>').join(""):'<div class="empty">Pas de statistiques de refus publiées</div>';
+}
 function render(d){
  if(!valid(d)){
   lastError="Source incompatible";qs("healthDot").className="dot alert";text("healthText","Source V1.2 rejetée");
   setNotice("Source rejetée : seuls les états PAPER préprod de la stratégie V1.2 sont acceptés.",true);
   return;
  }
- latest=d;lastError=null;
+ latest=d;lastError=null;renderLiquidity(d);
  const a=derive(d),date=timeValue(d.as_of??d.last_cycle_iso);
  const old=date!==null&&(Date.now()-date)>20*60*1000;
  qs("healthDot").className="dot "+(old?"wait":"ok");
