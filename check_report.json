@@ -3,12 +3,12 @@
   "mode": "PAPER_CYCLE",
   "engine_version": "V1.6.5",
   "strategy_version": "V1.2",
-  "generated_at": "2026-10-27T23:53:55.559923+00:00",
+  "generated_at": "2026-10-28T05:59:36.666724+00:00",
   "state_initialized_now": false,
   "cash_before_usdc": "4645.86183116690825828880000",
   "data": {
     "origin": "KRAKEN_PUBLIC_API",
-    "observed_at": "2026-10-27T23:53:55.430772+00:00",
+    "observed_at": "2026-10-28T05:59:36.536066+00:00",
     "pairs_quoted": 4,
     "pairs_valid": 4,
     "btc_daily_bars": 720,
@@ -33,13 +33,16 @@
       "evaluated": 4,
       "entries": [
         "BTC",
+        "ETH",
         "SOL",
         "XRP"
       ]
     },
     "C": {
       "evaluated": 2,
-      "entries": []
+      "entries": [
+        "BTC"
+      ]
     },
     "D": {
       "evaluated": 4,
@@ -47,7 +50,7 @@
     }
   },
   "skipped_candidates": [],
-  "synthesis_sha256": "02da6dd905da761b41df8625838afb13972617bfbedffb2eaa55f1257b2b2a30",
+  "synthesis_sha256": "ef0d3556580ffdf68f7e4c5ed0fa6ace227071b154dd6e9c695ff07316ac33c1",
   "guardrails": {
     "risk": {
       "peak_drawdown_kill": 0.25,
@@ -71,7 +74,7 @@
   },
   "decisions": [
     {
-      "decision_id": "cycle:2026-10-27T23:53:55.430772+00:00:BTC:HOLD",
+      "decision_id": "cycle:2026-10-28T05:59:36.536066+00:00:BTC:HOLD",
       "accepted": true,
       "reason": "HOLD_LOGGED_NO_ORDER",
       "action": "HOLD",
@@ -136,7 +139,7 @@
   },
   "quote_currency": "USDC",
   "valuation_method": "UE/MiCA (Moteur V1.6.2): Kraken XXX/USDC only (AssetPairs country_code=FR, status online, spread <= 0.3 %), no USD conversion. Daily bars (signals, ratios) from XXX/USDC OHLC; pairs with fewer than 220 closed daily bars are insufficient_history (bars null, never imputed).",
-  "equity_usdc": "6612.74381107393405828880000",
+  "equity_usdc": "6612.08185050599885828880000",
   "cash_usdc": "4645.86183116690825828880000",
   "fees_paid_usdc": "15.54950927645310906120000",
   "realized_pnl_usdc": "0",
@@ -144,29 +147,29 @@
     "BTC": {
       "qty": "0.00607117",
       "avg_cost": "80637.569515440000",
-      "value_usdc": "490.8348488911000"
+      "value_usdc": "490.6060872055000"
     },
     "ETH": {
       "qty": "0.20905441",
       "avg_cost": "2341.8067982400000",
-      "value_usdc": "491.21514717700000"
+      "value_usdc": "491.17333629500000"
     },
     "SOL": {
       "qty": "4.79728128",
       "avg_cost": "102.1525192800000",
-      "value_usdc": "485.96459366400000"
+      "value_usdc": "487.88350617600000"
     },
     "XRP": {
       "qty": "375.04878447",
       "avg_cost": "1.306641666960000",
-      "value_usdc": "498.8673901749258000"
+      "value_usdc": "496.5570896625906000"
     }
   },
   "exposure": {
     "max_crypto_exposure_usdc": 2000.0,
     "basis": "COST_INVESTED_INCL_FEES",
     "invested_usdc": 1959.2381688330918,
-    "market_value_usdc": 1966.8819799070259,
+    "market_value_usdc": 1966.2200193390906,
     "budget_remaining_usdc": 40.76183116690826,
     "usdc_remaining": 4645.861831166908
   },
@@ -200,19 +203,19 @@
         "closed_bars": 720,
         "status": "ok"
       },
-      "SOL": {
-        "pair": "SOL/USDC",
-        "closed_bars": 680,
-        "status": "ok"
-      },
       "ETH": {
         "pair": "ETH/USDC",
         "closed_bars": 720,
         "status": "ok"
       },
+      "SOL": {
+        "pair": "SOL/USDC",
+        "closed_bars": 681,
+        "status": "ok"
+      },
       "XRP": {
         "pair": "XRP/USDC",
-        "closed_bars": 680,
+        "closed_bars": 681,
         "status": "ok"
       }
     },
@@ -220,12 +223,12 @@
       "ADA": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "ALGO": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "APE": "SPREAD_ABOVE_0_3_PCT",
-      "ATOM": "VOLUME_MEDIAN_30D_BELOW_MIN",
+      "ATOM": "SPREAD_ABOVE_0_3_PCT",
       "AVAX": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "BCH": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "BERA": "SPREAD_ABOVE_0_3_PCT",
       "BNB": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "CC": "VOLUME_MEDIAN_30D_BELOW_MIN",
+      "CC": "SPREAD_ABOVE_0_3_PCT",
       "CRO": "SPREAD_ABOVE_0_3_PCT",
       "DOGE": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "DOT": "VOLUME_MEDIAN_30D_BELOW_MIN",
@@ -246,7 +249,7 @@
       "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDR": "PAIR_NOT_ONLINE",
-      "VET": "SPREAD_ABOVE_0_3_PCT",
+      "VET": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "VIRTUAL": "SPREAD_ABOVE_0_3_PCT",
       "XDC": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "XTZ": "VOLUME_MEDIAN_30D_BELOW_MIN"
@@ -258,7 +261,7 @@
     }
   },
   "liquidity_monitor": {
-    "as_of": "2026-10-27T23:53:55.430772+00:00",
+    "as_of": "2026-10-28T05:59:36.536066+00:00",
     "min_median_daily_volume_usdc": 1000000.0,
     "volume_basis": "median_30d_daily_ohlc_close_x_volume_usdc",
     "eligible_pairs_count": 4,
@@ -267,7 +270,7 @@
     "rejected_liquidity_orders": 0,
     "rejected_liquidity_pct": 0.0,
     "orderbook_checks": 4,
-    "median_spread_pct": 0.010893442992936996,
+    "median_spread_pct": 0.005128989929116088,
     "estimated_slippage_pct": 6.495695342779961e-05,
     "rejection_reasons": {},
     "depth_rule": {
@@ -277,68 +280,67 @@
     },
     "books": {
       "BTC": {
-        "best_bid": 80846.83,
-        "best_ask": 80846.84,
-        "mid": 80846.835,
-        "spread_pct": 1.2369068003713442e-05,
-        "depth_bid_usdc_0_5pct": 2054234.32361,
-        "depth_ask_usdc_0_5pct": 2516392.78921,
-        "as_of": "2026-10-27T23:53:51.503077+00:00"
-      },
-      "SOL": {
-        "best_bid": 101.3,
-        "best_ask": 101.31,
-        "mid": 101.305,
-        "spread_pct": 0.009871181086817038,
-        "depth_bid_usdc_0_5pct": 1378409.02587,
-        "depth_ask_usdc_0_5pct": 581166.68279,
-        "as_of": "2026-10-27T23:53:51.782942+00:00"
+        "best_bid": 80809.15,
+        "best_ask": 80809.16,
+        "mid": 80809.155,
+        "spread_pct": 1.2374835499764848e-05,
+        "depth_bid_usdc_0_5pct": 1736334.6794,
+        "depth_ask_usdc_0_5pct": 2642936.5411,
+        "as_of": "2026-10-28T05:59:31.039045+00:00"
       },
       "ETH": {
-        "best_bid": 2349.7,
-        "best_ask": 2349.98,
-        "mid": 2349.84,
-        "spread_pct": 0.011915704899056957,
-        "depth_bid_usdc_0_5pct": 2154643.98459,
-        "depth_ask_usdc_0_5pct": 1803788.11021,
-        "as_of": "2026-10-27T23:53:52.046043+00:00"
+        "best_bid": 2349.5,
+        "best_ask": 2349.51,
+        "mid": 2349.505,
+        "spread_pct": 0.0004256215670960479,
+        "depth_bid_usdc_0_5pct": 1738298.21952,
+        "depth_ask_usdc_0_5pct": 1688664.5527,
+        "as_of": "2026-10-28T05:59:31.453263+00:00"
+      },
+      "SOL": {
+        "best_bid": 101.7,
+        "best_ask": 101.71,
+        "mid": 101.705,
+        "spread_pct": 0.009832358291136128,
+        "depth_bid_usdc_0_5pct": 1080407.49075,
+        "depth_ask_usdc_0_5pct": 449057.63186,
+        "as_of": "2026-10-28T05:59:31.927293+00:00"
       },
       "XRP": {
-        "best_bid": 1.33011,
-        "best_ask": 1.33045,
-        "mid": 1.33028,
-        "spread_pct": 0.025558529031482095,
-        "depth_bid_usdc_0_5pct": 454733.13041707,
-        "depth_ask_usdc_0_5pct": 322455.22311273,
-        "as_of": "2026-10-27T23:53:52.360603+00:00"
+        "best_bid": 1.32398,
+        "best_ask": 1.32431,
+        "mid": 1.324145,
+        "spread_pct": 0.024921741954242172,
+        "depth_bid_usdc_0_5pct": 623056.08807792,
+        "depth_ask_usdc_0_5pct": 403431.59345607,
+        "as_of": "2026-10-28T05:59:32.296012+00:00"
       }
     },
     "median_volumes_usdc_30d": {
       "BTC": 12551387.367231533,
-      "SOL": 2264585.6547342767,
       "ETH": 5392426.259162697,
-      "XRP": 1734203.579261993,
-      "BNB": 103070.3137221,
-      "XDC": 194839.08106521924,
+      "SOL": 2264585.6547342767,
+      "XRP": 1859292.0036167963,
+      "BNB": 104947.1045116,
+      "XDC": 208097.3702720143,
       "ADA": 511236.8832460002,
-      "LINK": 401252.5899007884,
+      "LINK": 377511.32115339633,
       "BCH": 38265.810994128,
-      "AVAX": 184712.38381426665,
-      "LTC": 132064.63553487495,
-      "DOGE": 155560.26510968502,
-      "DOT": 143994.64718037896,
+      "DOGE": 151986.0193315964,
+      "AVAX": 181055.4953864952,
+      "LTC": 127688.42426698402,
+      "DOT": 136862.6012871883,
       "TRUMP": 121537.3619565,
       "PENGU": 33694.83559670427,
-      "TON": 45044.911029705,
+      "TON": 42032.009337445,
       "ALGO": 38215.79892373445,
       "FARTCOIN": 44411.884403603,
       "SHIB": 10859.340948963096,
-      "MELANIA": 21318.33873312,
-      "CC": 28144.79906448855,
-      "PEAQ": 8041.0429820732,
-      "ATOM": 14815.946228772718,
+      "MELANIA": 21565.425484144,
       "XTZ": 5324.090670750875,
-      "MANA": 2555.6954424489372
+      "PEAQ": 7770.0527773665,
+      "VET": 3052.28350806847,
+      "MANA": 1833.202913282698
     },
     "alert": null,
     "rollback_policy": "Repli manuel documenté (non automatisé) : si LIQUIDITY_REVIEW est levée, Cyril décide le retour du seuil à 5 M USDC de volume médian 30 j (UNIVERSE.min_median_daily_usdc_volume_30d=5000000) via un correctif versionné."
