@@ -1,27 +1,27 @@
 {
-  "equity": 6468.413385052598,
+  "equity": 6463.984730292922,
   "cash": 4645.861831166908,
   "C0": 6605.1,
   "positions": [
     {
       "asset": "BTC",
       "qty": 0.00607117,
-      "value": 461.4370902288
+      "value": 462.2332027509
     },
     {
       "asset": "ETH",
       "qty": 0.20905441,
-      "value": 469.7703457992
+      "value": 468.4951138982
     },
     {
       "asset": "SOL",
       "qty": 4.79728128,
-      "value": 429.2127561216
+      "value": 431.7553152
     },
     {
       "asset": "XRP",
       "qty": 375.04878447,
-      "value": 462.1313617360893
+      "value": 455.6392672769136
     }
   ],
   "portfolio": [
@@ -30,35 +30,35 @@
       "qty": 4645.861831166908,
       "value_usdc": 4645.861831166908,
       "role": "devise de compte / refuge",
-      "weight_pct": 71.82
+      "weight_pct": 71.87
     },
     {
       "asset": "BTC",
       "qty": 0.00607117,
-      "value_usdc": 461.4370902288,
+      "value_usdc": 462.2332027509,
       "role": "position",
-      "weight_pct": 7.13
+      "weight_pct": 7.15
     },
     {
       "asset": "ETH",
       "qty": 0.20905441,
-      "value_usdc": 469.7703457992,
+      "value_usdc": 468.4951138982,
       "role": "position",
-      "weight_pct": 7.26
+      "weight_pct": 7.25
     },
     {
       "asset": "SOL",
       "qty": 4.79728128,
-      "value_usdc": 429.2127561216,
+      "value_usdc": 431.7553152,
       "role": "position",
-      "weight_pct": 6.64
+      "weight_pct": 6.68
     },
     {
       "asset": "XRP",
       "qty": 375.04878447,
-      "value_usdc": 462.1313617360893,
+      "value_usdc": 455.6392672769136,
       "role": "position",
-      "weight_pct": 7.14
+      "weight_pct": 7.05
     }
   ],
   "orders": [
@@ -113,20 +113,20 @@
     {
       "action": "HOLD",
       "asset": "Portefeuille",
-      "created_at": "2026-11-05T18:52:55.644663+00:00",
-      "reason": "HOLD_LOGGED_NO_ORDER · cycle:2026-11-05T18:52:55.124865+00:00:BTC:HOLD · acceptée=True",
-      "decision_id": "cycle:2026-11-05T18:52:55.124865+00:00:BTC:HOLD",
+      "created_at": "2026-11-06T00:27:47.740185+00:00",
+      "reason": "HOLD_LOGGED_NO_ORDER · cycle:2026-11-06T00:27:47.596879+00:00:BTC:HOLD · acceptée=True",
+      "decision_id": "cycle:2026-11-06T00:27:47.596879+00:00:BTC:HOLD",
       "accepted": true
     }
   ],
-  "as_of": "2026-11-05T18:52:55.644663+00:00",
-  "last_cycle_iso": "2026-11-05T18:52:55.644663+00:00",
+  "as_of": "2026-11-06T00:27:47.740185+00:00",
+  "last_cycle_iso": "2026-11-06T00:27:47.740185+00:00",
   "usdc_hold_usdc": 6605.1,
   "usdc_hold_return_pct": 0,
   "btc_hold_usdc": null,
   "quote_currency": "USDC",
   "valuation_method": "UE/MiCA (Moteur V1.6.2): Kraken XXX/USDC only (AssetPairs country_code=FR, status online, spread <= 0.3 %), no USD conversion. Daily bars (signals, ratios) from XXX/USDC OHLC; pairs with fewer than 220 closed daily bars are insufficient_history (bars null, never imputed).",
-  "cur_dd_pct": 2.2923102542877967,
+  "cur_dd_pct": 2.3592066629572233,
   "fees_paid_usdc": 15.54950927645311,
   "risk": {
     "risk_lock": false,
@@ -135,8 +135,8 @@
   },
   "candidate_signals": {
     "A": "4 évaluées · 0 entrée",
-    "B": "4 évaluées · 2 entrées : BTC, ETH",
-    "C": "2 évaluées · 2 entrées : BTC, ETH",
+    "B": "4 évaluées · 0 entrée",
+    "C": "2 évaluées · 0 entrée",
     "D": "4 évaluées · 0 entrée"
   },
   "grok": {
@@ -149,9 +149,9 @@
       {
         "action": "HOLD",
         "asset": "Portefeuille",
-        "created_at": "2026-11-05T18:52:55.644663+00:00",
-        "reason": "HOLD_LOGGED_NO_ORDER · cycle:2026-11-05T18:52:55.124865+00:00:BTC:HOLD · acceptée=True",
-        "decision_id": "cycle:2026-11-05T18:52:55.124865+00:00:BTC:HOLD",
+        "created_at": "2026-11-06T00:27:47.740185+00:00",
+        "reason": "HOLD_LOGGED_NO_ORDER · cycle:2026-11-06T00:27:47.596879+00:00:BTC:HOLD · acceptée=True",
+        "decision_id": "cycle:2026-11-06T00:27:47.596879+00:00:BTC:HOLD",
         "accepted": true
       }
     ],
@@ -189,7 +189,7 @@
       "reason": null,
       "events": []
     },
-    "synthesis_sha256": "eb3090eccf385b4ec7f80dfa5927ac0f5050245af430500a9649466fc9774531",
+    "synthesis_sha256": "613a49765124bfc79b294ff43a2b192b6fa2c4517d40a5b6e30f387f3e8a5f34",
     "engine_version_report": "V1.6.5",
     "migration": null,
     "compliance": {
@@ -211,24 +211,24 @@
       ],
       "insufficient_history": [],
       "history": {
-        "ETH": {
-          "pair": "ETH/USDC",
-          "closed_bars": 720,
-          "status": "ok"
-        },
         "BTC": {
           "pair": "BTC/USDC",
           "closed_bars": 720,
           "status": "ok"
         },
+        "ETH": {
+          "pair": "ETH/USDC",
+          "closed_bars": 720,
+          "status": "ok"
+        },
         "SOL": {
           "pair": "SOL/USDC",
-          "closed_bars": 689,
+          "closed_bars": 690,
           "status": "ok"
         },
         "XRP": {
           "pair": "XRP/USDC",
-          "closed_bars": 689,
+          "closed_bars": 690,
           "status": "ok"
         }
       },
@@ -241,7 +241,7 @@
         "BCH": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "BERA": "SPREAD_ABOVE_0_3_PCT",
         "BNB": "VOLUME_MEDIAN_30D_BELOW_MIN",
-        "CC": "VOLUME_MEDIAN_30D_BELOW_MIN",
+        "CC": "SPREAD_ABOVE_0_3_PCT",
         "CRO": "SPREAD_ABOVE_0_3_PCT",
         "DOGE": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "DOT": "VOLUME_MEDIAN_30D_BELOW_MIN",
@@ -249,16 +249,16 @@
         "EURCV": "STABLECOIN_OR_FIAT_EXCLUDED",
         "EUROP": "STABLECOIN_OR_FIAT_EXCLUDED",
         "EURR": "PAIR_NOT_ONLINE",
-        "FARTCOIN": "SPREAD_ABOVE_0_3_PCT",
+        "FARTCOIN": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "LINK": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "LTC": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "MANA": "VOLUME_MEDIAN_30D_BELOW_MIN",
-        "MELANIA": "VOLUME_MEDIAN_30D_BELOW_MIN",
-        "PEAQ": "SPREAD_ABOVE_0_3_PCT",
+        "MELANIA": "SPREAD_ABOVE_0_3_PCT",
+        "PEAQ": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "PENGU": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "S": "SPREAD_ABOVE_0_3_PCT",
         "SHIB": "VOLUME_MEDIAN_30D_BELOW_MIN",
-        "TON": "VOLUME_MEDIAN_30D_BELOW_MIN",
+        "TON": "SPREAD_ABOVE_0_3_PCT",
         "TRUMP": "VOLUME_MEDIAN_30D_BELOW_MIN",
         "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
         "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
@@ -266,7 +266,7 @@
         "VET": "SPREAD_ABOVE_0_3_PCT",
         "VIRTUAL": "SPREAD_ABOVE_0_3_PCT",
         "XDC": "VOLUME_MEDIAN_30D_BELOW_MIN",
-        "XTZ": "VOLUME_MEDIAN_30D_BELOW_MIN"
+        "XTZ": "SPREAD_ABOVE_0_3_PCT"
       },
       "btc_regime_source": "BTC/USDC",
       "btc_regime_history": {
@@ -294,24 +294,24 @@
     ],
     "insufficient_history": [],
     "history": {
-      "ETH": {
-        "pair": "ETH/USDC",
-        "closed_bars": 720,
-        "status": "ok"
-      },
       "BTC": {
         "pair": "BTC/USDC",
         "closed_bars": 720,
         "status": "ok"
       },
+      "ETH": {
+        "pair": "ETH/USDC",
+        "closed_bars": 720,
+        "status": "ok"
+      },
       "SOL": {
         "pair": "SOL/USDC",
-        "closed_bars": 689,
+        "closed_bars": 690,
         "status": "ok"
       },
       "XRP": {
         "pair": "XRP/USDC",
-        "closed_bars": 689,
+        "closed_bars": 690,
         "status": "ok"
       }
     },
@@ -324,7 +324,7 @@
       "BCH": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "BERA": "SPREAD_ABOVE_0_3_PCT",
       "BNB": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "CC": "VOLUME_MEDIAN_30D_BELOW_MIN",
+      "CC": "SPREAD_ABOVE_0_3_PCT",
       "CRO": "SPREAD_ABOVE_0_3_PCT",
       "DOGE": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "DOT": "VOLUME_MEDIAN_30D_BELOW_MIN",
@@ -332,16 +332,16 @@
       "EURCV": "STABLECOIN_OR_FIAT_EXCLUDED",
       "EUROP": "STABLECOIN_OR_FIAT_EXCLUDED",
       "EURR": "PAIR_NOT_ONLINE",
-      "FARTCOIN": "SPREAD_ABOVE_0_3_PCT",
+      "FARTCOIN": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "LINK": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "LTC": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "MANA": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "MELANIA": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "PEAQ": "SPREAD_ABOVE_0_3_PCT",
+      "MELANIA": "SPREAD_ABOVE_0_3_PCT",
+      "PEAQ": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "PENGU": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "S": "SPREAD_ABOVE_0_3_PCT",
       "SHIB": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "TON": "VOLUME_MEDIAN_30D_BELOW_MIN",
+      "TON": "SPREAD_ABOVE_0_3_PCT",
       "TRUMP": "VOLUME_MEDIAN_30D_BELOW_MIN",
       "USDG": "STABLECOIN_OR_FIAT_EXCLUDED",
       "USDQ": "STABLECOIN_OR_FIAT_EXCLUDED",
@@ -349,7 +349,7 @@
       "VET": "SPREAD_ABOVE_0_3_PCT",
       "VIRTUAL": "SPREAD_ABOVE_0_3_PCT",
       "XDC": "VOLUME_MEDIAN_30D_BELOW_MIN",
-      "XTZ": "VOLUME_MEDIAN_30D_BELOW_MIN"
+      "XTZ": "SPREAD_ABOVE_0_3_PCT"
     },
     "btc_regime_source": "BTC/USDC",
     "btc_regime_history": {
@@ -358,7 +358,7 @@
     }
   },
   "liquidity_monitor": {
-    "as_of": "2026-11-05T18:52:55.124865+00:00",
+    "as_of": "2026-11-06T00:27:47.596879+00:00",
     "min_median_daily_volume_usdc": 1000000.0,
     "volume_basis": "median_30d_daily_ohlc_close_x_volume_usdc",
     "eligible_pairs_count": 4,
@@ -367,7 +367,7 @@
     "rejected_liquidity_orders": 0,
     "rejected_liquidity_pct": 0.0,
     "orderbook_checks": 4,
-    "median_spread_pct": 0.008480416311346193,
+    "median_spread_pct": 0.009869583023023706,
     "estimated_slippage_pct": 6.495695342779961e-05,
     "rejection_reasons": {},
     "depth_rule": {
@@ -376,65 +376,63 @@
       "reject_reason": "INSUFFICIENT_DEPTH"
     },
     "books": {
-      "ETH": {
-        "best_bid": 2247.31,
-        "best_ask": 2247.44,
-        "mid": 2247.375,
-        "spread_pct": 0.005784526391901663,
-        "depth_bid_usdc_0_5pct": 3023086.75535,
-        "depth_ask_usdc_0_5pct": 1935756.42455,
-        "as_of": "2026-11-05T18:52:50.079070+00:00"
-      },
       "BTC": {
-        "best_bid": 76012.21,
-        "best_ask": 76012.22,
-        "mid": 76012.215,
-        "spread_pct": 1.3155780291365013e-05,
-        "depth_bid_usdc_0_5pct": 3239759.12026,
-        "depth_ask_usdc_0_5pct": 1715215.51294,
-        "as_of": "2026-11-05T18:52:50.438132+00:00"
+        "best_bid": 76138.21,
+        "best_ask": 76144.78,
+        "mid": 76141.495,
+        "spread_pct": 0.008628672184595272,
+        "depth_bid_usdc_0_5pct": 2548757.39337,
+        "depth_ask_usdc_0_5pct": 1730958.54453,
+        "as_of": "2026-11-06T00:27:42.393112+00:00"
+      },
+      "ETH": {
+        "best_bid": 2241.02,
+        "best_ask": 2241.38,
+        "mid": 2241.2,
+        "spread_pct": 0.016062823487417454,
+        "depth_bid_usdc_0_5pct": 2758334.59785,
+        "depth_ask_usdc_0_5pct": 1824125.6007,
+        "as_of": "2026-11-06T00:27:42.883960+00:00"
       },
       "SOL": {
-        "best_bid": 89.47,
-        "best_ask": 89.48,
-        "mid": 89.475,
-        "spread_pct": 0.011176306230790724,
-        "depth_bid_usdc_0_5pct": 575253.01488,
-        "depth_ask_usdc_0_5pct": 435581.62221,
-        "as_of": "2026-11-05T18:52:50.869706+00:00"
+        "best_bid": 90.0,
+        "best_ask": 90.01,
+        "mid": 90.005,
+        "spread_pct": 0.011110493861452141,
+        "depth_bid_usdc_0_5pct": 541327.88746,
+        "depth_ask_usdc_0_5pct": 454595.44538,
+        "as_of": "2026-11-06T00:27:43.422416+00:00"
       },
       "XRP": {
-        "best_bid": 1.23234,
-        "best_ask": 1.23275,
-        "mid": 1.232545,
-        "spread_pct": 0.03326450555557809,
-        "depth_bid_usdc_0_5pct": 611726.25990347,
-        "depth_ask_usdc_0_5pct": 483304.64816915,
-        "as_of": "2026-11-05T18:52:51.293105+00:00"
+        "best_bid": 1.21514,
+        "best_ask": 1.21515,
+        "mid": 1.215145,
+        "spread_pct": 0.0008229470557011714,
+        "depth_bid_usdc_0_5pct": 527032.8001747,
+        "depth_ask_usdc_0_5pct": 454225.55816818,
+        "as_of": "2026-11-06T00:27:43.905424+00:00"
       }
     },
     "median_volumes_usdc_30d": {
-      "ETH": 4677858.107052847,
-      "BTC": 12315997.280041743,
+      "BTC": 12874141.183479719,
+      "ETH": 4892848.469015876,
       "SOL": 2917855.4107326022,
       "XRP": 1734203.579261993,
-      "ADA": 436717.62522870174,
+      "ADA": 426421.7620882592,
       "DOGE": 139179.02818799517,
-      "TRUMP": 115010.00434356,
       "AVAX": 175622.04430136958,
-      "LINK": 377511.32115339633,
-      "BNB": 104947.1045116,
-      "XDC": 235417.4824259562,
-      "CC": 35271.67955038725,
-      "DOT": 136862.6012871883,
+      "TRUMP": 122820.13008636,
+      "LINK": 376159.68437315663,
+      "BNB": 109706.9024344,
+      "XDC": 226394.1160854046,
+      "BCH": 46519.7164212013,
+      "DOT": 129012.7981264161,
       "LTC": 126611.12292777753,
-      "BCH": 42497.7608176834,
-      "MELANIA": 21794.1009884895,
-      "PENGU": 30939.15418970914,
-      "TON": 36258.839872325,
+      "PENGU": 31288.47978368324,
       "SHIB": 17838.044215866452,
-      "ALGO": 36677.90989867248,
-      "XTZ": 4969.524374874945,
+      "FARTCOIN": 38619.874237284,
+      "ALGO": 36174.08351991444,
+      "PEAQ": 7827.02092886845,
       "MANA": 509.924459596071
     },
     "alert": null,
@@ -444,7 +442,7 @@
     "max_crypto_exposure_usdc": 2000.0,
     "basis": "COST_INVESTED_INCL_FEES",
     "invested_usdc": 1959.2381688330918,
-    "market_value_usdc": 1822.5515538856894,
+    "market_value_usdc": 1818.1228991260136,
     "budget_remaining_usdc": 40.76183116690826,
     "usdc_remaining": 4645.861831166908
   },
@@ -484,7 +482,7 @@
   "start_iso": null,
   "start_paris": null,
   "strategy_version": "V1.2",
-  "total": 6468.413385052598,
+  "total": 6463.984730292922,
   "trade_stats": null,
   "universe": null,
   "version": null,
@@ -502,6 +500,6 @@
     "branch": "state-v12",
     "real_cycle": true
   },
-  "generated_utc": "2026-11-05T18:52:55.804116+00:00",
-  "generated_paris": "2026-11-05T19:52:55.804116+01:00"
+  "generated_utc": "2026-11-06T00:27:47.877574+00:00",
+  "generated_paris": "2026-11-06T01:27:47.877574+01:00"
 }
